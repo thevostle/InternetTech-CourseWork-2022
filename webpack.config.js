@@ -1,7 +1,7 @@
 module.exports = {
     mode: 'development',
     entry: {
-        main: "./static/js/SomePage.js",
+        main: "./static/js/MainPage.js",
     },
     module: {
         rules: [
