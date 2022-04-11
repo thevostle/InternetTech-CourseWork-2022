@@ -1,0 +1,22 @@
+@import "../devices.scss";
+@import "../colors.scss";
+
+.header {
+    background-color: $colorRedDarkest;
+}
+
+.header__linkContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 60rem;
+
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.header__link {
+    text-decoration: none;
+    color: $commonWhite;
+    padding: 0.5rem 3rem;
+}

@@ -1,0 +1,18 @@
+@import "./style/devices.scss";
+@import "./style/colors.scss";
+
+.container {
+    width: 120rem;
+
+    @include notebook {
+       width: 70rem; 
+    }
+
+    @include tablets {
+        width: 60rem;
+    }
+
+    @include phones {
+        width: 30rem;
+    }
+}

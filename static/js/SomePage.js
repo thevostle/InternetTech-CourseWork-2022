@@ -1,9 +1,10 @@
 import SomeComponent from "./components/SomeComponent";
+import Header from "./components/Header";
 import React from "react";
 import ReactDOM from "react-dom";
 
 const SomePage = () => {
-    return <SomeComponent />;
+    return <Header />;
 };
 
-ReactDOM.render(<SomePage />, document.getElementById("render-react-here"));
+ReactDOM.render(<SomePage />, document.getElementById("root"));
