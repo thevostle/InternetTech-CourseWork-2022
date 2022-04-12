@@ -1,0 +1,52 @@
+.authComponent {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 40rem;
+    margin: auto;
+}
+
+.authComponent__button {
+    background-color: #732727;
+    color: white;
+    padding: 1rem;
+    border-color: #732727; // взять из переменной
+    border-width: 5px;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+
+    &_switchModeButton {
+        background-color: white;
+        color: black;
+    }
+}
+
+.authComponent__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+
+.authComponent__inputWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    &_last {
+        margin-bottom: 3rem;
+    }
+}
+
+.authComponent__input {
+    padding: 1rem;
+    width: 20rem;
+}
+
+.authComponent__inputDescription {
+    font-size: 1rem;
+    color: rgb(66, 66, 66);
+}
