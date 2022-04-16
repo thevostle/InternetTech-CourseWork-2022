@@ -1,0 +1,42 @@
+@import "../devices.scss";
+@import "../colors.scss";
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $colorRedDarkest;
+    margin-bottom: 4rem;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__linkContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.header__link {
+    text-decoration: none;
+    color: $commonWhite;
+    padding: 1.5rem 3rem;
+    width: 100%;
+    text-align: center;
+
+    &:hover {
+        background-color: $colorRedDarker;
+    }
+}

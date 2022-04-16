@@ -1,0 +1,37 @@
+@import "./style/devices.scss";
+@import "./style/colors.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@400;700&family=Source+Code+Pro:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anek Tamil', sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 120rem;
+
+    @include notebook {
+       width: 70rem; 
+    }
+
+    @include tablets {
+        width: 60rem;
+    }
+
+    @include phones {
+        width: 30rem;
+    }
+
+    &_flex {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+.hideOnDesktop {
+    display: none;
+}
