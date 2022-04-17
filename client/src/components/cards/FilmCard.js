@@ -24,7 +24,8 @@ class FilmCard extends React.Component {
                     <div className="filmCard__title">{this.props.filmTitle}</div>
                     <div className="filmCard__type">{this.props.filmType}</div>
                 </Link>
-            </div>);
+            </div>
+        );
     }
 }
 

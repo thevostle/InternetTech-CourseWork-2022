@@ -12,7 +12,7 @@ import '../style/components/header.scss';
 class Header extends React.Component {
     render() {
         return <div className="header">
-            <div class="header__container container">
+            <div className="header__container container">
                 <div className="header__logo">
                     <img src="{this.props.mainLogo}" />
                 </div>
