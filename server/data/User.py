@@ -1,6 +1,3 @@
-import email
-
-
 class User:
     id = 0
     name = ''
