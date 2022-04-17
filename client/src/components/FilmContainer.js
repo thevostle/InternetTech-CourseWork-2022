@@ -1,5 +1,7 @@
 import React from "react";
 
+import FilmCard from "./cards/FilmCard"
+
 
 /*
  * для вызова компонента надо будет из бэка вытаскивать json с данными о фильмах, например в таком формате
@@ -15,15 +17,16 @@ import React from "react";
 function FilmContainer(props) {
     return (
         <div className="filmContainer">
-            {props.media.map((film, id) => {
+            тут будут фильмы
+            {/*props.media.map((film, id) => {
                 return <FilmCard film={film} id={film.id} />
-            })}
+            })*/}
         </div>
     );
 }
 
-FilmContainer.propTypes = {
+/*FilmContainer.propTypes = {
     films: PropTypes.arrayOf(PropTypes.object).isRequired
-}
+}*/
 
 export default FilmContainer

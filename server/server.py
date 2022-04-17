@@ -31,5 +31,14 @@ def index():
 def getFilms():
     return {"success":True}
 
+@app.route("/api/registrateUser", methods=['GET', 'POST'])
+def registrateUser():
+    return {"success": True}
+
+@app.route("/api/loginUser", methods=['GET', 'POST'])
+def loginUser():
+    return {"success": True}
+
+
 if __name__ == "__main__":
     app.run(debug=True)

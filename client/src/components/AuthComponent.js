@@ -18,7 +18,7 @@ class AuthComponent extends React.Component {
         return (
             <div className="authComponent" >
                 <button className="authComponent__button authComponent__button_switchModeButton" onClick={this.changeMode.bind(this)}>{this.state.registrate ? "Я уже смешарик" : "Хочу создать новый аккаунт"}</button>
-                <form className="authComponent__form" method="post" action={this.state.registrate ? "api для регистрации" : "api для входа"}>
+                <form className="authComponent__form" method="post" action={this.state.registrate ? "http://127.0.0.1:5000/api/registrateUser" : "http://127.0.0.1:5000/api/loginUser"}>
                     <div className="authComponent__inputWrapper">
                         <div className="authComponent__inputDescription">Никнейм</div>
                         <input className="authComponent__input authComponent__input_username" type="text" name="username"></input>
